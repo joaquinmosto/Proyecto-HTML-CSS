@@ -1,0 +1,322 @@
+/* IMPORTAR FONT Y ACOMODAR MARGENES*/
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;600&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    
+}
+
+
+
+/* HEADER */
+nav{
+    padding: 1rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 150px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.opciones{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+}
+#mobile{
+    display: none;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.boton1{
+    color: white;
+    background-color: #F3613C;
+    border: none;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 2rem;
+    border-radius: 20px;
+
+}
+
+
+
+/* PARTE 1 */
+.Parte1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+.Texto1{
+    width: 20%;
+}
+
+
+/* PARTE 2 */
+.Parte2{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+.Texto2{
+    width: 35%;
+}
+.numeros{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-right: 30px;
+}
+.secciones{
+    width: 45%;
+    display: flex;
+}
+li {
+    list-style-type: none;
+    margin: 20px;
+}
+
+
+/* PARTE 3 */
+.titulo_parte_3{
+    text-align: center;
+    font-size: x-large;
+}
+.Parte3{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+   
+}
+.Atext{
+    background-color: #FAFAFA;
+    text-align: center;
+    font-family: 'Be Vietnam Pro', sans-serif;
+    padding: 40px;
+    
+}
+.avatar{
+    position: relative;
+    left: 185px;
+    top: 30px;
+    height: 80px;
+}
+.PJ{
+    width: 25%;
+}
+.PJ p{
+    color: #8C8C94;
+}
+.boton2{
+    display: flex;
+    justify-content: center;
+    margin: 100px;
+    
+
+}
+
+
+/* PARTE 4 */
+.Parte4{
+    display: flex;
+    background-color: #F3613C;
+    color: white;
+    height: 150px;
+    justify-content: space-between;
+}
+/* PSEUDOCLASE */
+.Parte4:hover{
+    background-color: white;
+    color: #F3613C;
+}
+.Titulo_Parte4{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    
+}
+.boton-parte4{
+    display: flex;
+    margin-right: 10%;
+    align-items: center;
+}
+.boton3{
+    color: #F3613C;
+    background-color: white;
+    border: none;
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 2rem;
+    border-radius: 20px;
+
+}
+
+
+/* PIE DE PAGINA */
+footer{
+    height: 250px;
+    background-color: #1E1E26;
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.pie1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+.icons{
+    display: flex;
+    justify-content: space-around;
+}
+.pie2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    color: white;
+    text-decoration: white;
+}
+.pie3{
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+    gap: 1rem;
+    color: white;
+    text-decoration: white;
+}
+.pie4{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.form{
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 2rem;
+    border-radius: 20px;
+}
+/* PSEUDOELEMENTO */
+imput::placeholder{
+    color: #8C8C94;
+}
+
+
+
+/* MEDIA QUERY */
+@media screen and (max-width: 400px){
+.logo{
+     width: 100%;
+    justify-content: space-between;
+}
+#mobile{
+    display: flex;
+}
+.opciones{
+    display: none;
+}
+.botonnav{
+    display: none;
+}
+.Parte1{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.Texto1{
+    text-align: center;
+    width: 100%;
+   
+}
+.secciones{
+    width: 100%;
+}
+li{
+
+}
+.titulos-secciones{
+    width: 100%;
+    background-color: #F3603B70;
+}
+.Parte2{
+    flex-direction: column;
+}
+.Texto2{
+    text-align: center;
+    width: 100%;
+    margin-bottom: 100px;
+}
+.Parte3{
+    flex-direction: column;
+    width: 100%;
+}
+.PJ{
+    width: 100%;
+}
+#PJM{
+    display: none;
+}
+.avatar{
+    left: 160px;
+}
+.Parte4{
+    flex-direction: column;
+    height: 300px;
+    align-items: center;
+    justify-content: center;
+} 
+.Titulo_Parte4{
+    width: 100%;
+    font-size: x-large;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.boton-parte4{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    flex-direction: column-reverse;
+    height: 490px;
+} 
+.pie1{
+    align-items: center;
+    margin: 10px;
+}
+.icons{
+    height: 40px;
+    padding: 10px;
+    width: 100%;
+}
+.pie2{
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.pie3{
+    align-items: center;
+    margin-bottom: 5px;
+}
+.pie4{
+    align-items: center;
+}
+}
